@@ -1,0 +1,10 @@
+"use strict";
+exports.__esModule = true;
+var PromotionA_1 = require("./PromotionA");
+var promotionA = new PromotionA_1.PromotionA(['a', 'b']);
+var promotionB = new PromotionA_1.PromotionA(['c', 'b']);
+var promotionC = new PromotionA_1.PromotionA(['e', 'a']);
+promotionA.setNextPromotion(promotionB);
+promotionB.setNextPromotion(promotionC);
+var shoppingCart = ['a', 'b', 'shie', 'e'];
+promotionA.usePromotion(shoppingCart);

@@ -1,0 +1,15 @@
+"use strict";
+exports.__esModule = true;
+var Originator_1 = require("./Originator");
+var CareTaker_1 = require("./CareTaker");
+var originator = new Originator_1.Originator();
+var careTaker = new CareTaker_1.CareTaker();
+originator.setState('State #1');
+originator.setState('State #2');
+careTaker.add(originator.saveStateToMemento());
+originator.setState('State #3');
+careTaker.add(originator.saveStateToMemento());
+originator.setState('State #4');
+console.log('current sate :' + originator.getSate());
+originator.getStateFromMemento(careTaker.get(0));
+console.log('first saved state :' + originator.getSate());

@@ -1,0 +1,13 @@
+"use strict";
+exports.__esModule = true;
+var ShapeFactory_1 = require("./ShapeFactory");
+var greenCircle = ShapeFactory_1.ShapeFactory.getCircle('Green');
+var greenCircle2 = ShapeFactory_1.ShapeFactory.getCircle('Green');
+var YellowCircle = ShapeFactory_1.ShapeFactory.getCircle('Yellow');
+var RedCircle = ShapeFactory_1.ShapeFactory.getCircle('Red');
+var YellowCircle2 = ShapeFactory_1.ShapeFactory.getCircle('Yellow');
+greenCircle.draw();
+greenCircle2.draw();
+YellowCircle.draw();
+YellowCircle2.draw();
+RedCircle.draw();

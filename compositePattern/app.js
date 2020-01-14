@@ -1,0 +1,15 @@
+"use strict";
+exports.__esModule = true;
+var circle_1 = require("./circle");
+var square_1 = require("./square");
+var shapeDiagram_1 = require("./shapeDiagram");
+var diagram = new shapeDiagram_1.ShapeDiagram();
+var circle1 = new circle_1.Circle();
+diagram.add(circle1);
+var square1 = new square_1.Square();
+diagram.add(square1);
+var circle2 = new circle_1.Circle();
+diagram.add(circle2);
+diagram.draw();
+diagram.remove(square1);
+diagram.draw();
