@@ -64,3 +64,6 @@ console.log(smartObj)
 
 
 
+
+
+export const aaa = [{ aaa: 1 }];

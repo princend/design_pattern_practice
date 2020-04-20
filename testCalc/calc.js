@@ -1,3 +1,5 @@
+"use strict";
+exports.__esModule = true;
 var calcValue = "63.5‬";
 if ("63.5" === calcValue) {
     console.log('應該要相等');
@@ -52,3 +54,4 @@ function applyMixins(derivedCtor, baseCtors) {
     });
 }
 console.log(smartObj);
+exports.aaa = [{ aaa: 1 }];
