@@ -19,7 +19,7 @@ function extend<First, Second>(first: First, second: Second): First & Second {
 }
 
 
-class Person {
+export class Person {
     /** */
     constructor(public name: string) {
     }

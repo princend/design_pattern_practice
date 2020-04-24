@@ -43,3 +43,4 @@ exports.Cir1 = Cir1;
 var a = new Cir1();
 // console.log(a.aa());
 console.log(a.bb());
+
